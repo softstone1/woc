@@ -16,6 +16,8 @@ This application provides weather forecasts for major global cities.
 - **Logging and Recovery Middleware**: Integrates Gorilla Handlers to provide logging and recovery middleware.
 - **Automated Unit Tests**: Leverages GitHub Copilot to generate unit tests.
 - **Go Profiling**: Includes profiling capabilities to optimize performance and troubleshoot bottlenecks in the application.
+- **Go Template and HTMX**: Implements a simple web UI using Go's native template system and HTMX for dynamic content without writing JavaScript, enhancing user interaction and page responsiveness.
+- **Dependency Injection**: Utilizes dependency injection in the main function to orchestrate application setup. For more complex dependency management, the application integrates Google's Wire package, automating dependency injection and reducing boilerplate.
 
 ## Getting Started
 
