@@ -1,0 +1,46 @@
+# Go specific
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.prof
+*.test
+*.test.txt
+*.test.html
+*.cover
+*.s
+*.swp
+*.swpx
+*.swp~
+*.tmp
+*.tmp.*
+*.bak
+*.bak.*
+*.old
+_testmain.go
+**/__debug_bin*
+*.pprof
+# VS Code specific
+.vscode/
+*.code-workspace
+*.vsix
+.vs/
+*.log
+
+# Terraform specific
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Terragrunt specific
+.terragrunt-cache/

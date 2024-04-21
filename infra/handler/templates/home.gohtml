@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://unpkg.com/htmx.org"></script>
+</head>
+
+<body>
+    <h1>Weather Forecasts for Major Global Cities</h1>
+    <select id="city-select" name="city" hx-get="/weather" hx-target="#weather" hx-indicator=".htmx-indicator">
+        <option value="" selected disabled>Select a city</option>
+        {{ range . }}
+        <option value="{{ .Name }}">{{ .Name }}</option>
+        {{ end }}
+    </select>
+    <div id="weather">
+    </div>
+</body>
+
+</html>
